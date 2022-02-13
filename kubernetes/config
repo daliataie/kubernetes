@@ -25,3 +25,6 @@ users:
       - --cluster-name
       - javahome
       command: aws
+      name: jenkins-sa
+      user:
+      token: 
