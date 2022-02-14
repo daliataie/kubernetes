@@ -9,6 +9,10 @@ contexts:
     cluster: arn:aws:eks:us-east-2:247630333405:cluster/javahome
     user: arn:aws:eks:us-east-2:247630333405:cluster/javahome
   name: arn:aws:eks:us-east-2:247630333405:cluster/javahome
+- context:
+    cluster: ""
+    user: jenkins-sa
+  name: gce
 current-context: arn:aws:eks:us-east-2:247630333405:cluster/javahome
 kind: Config
 preferences: {}
@@ -25,6 +29,9 @@ users:
       - --cluster-name
       - javahome
       command: aws
-      name: jenkins-sa
-      user:
-      token: eyJhbGciOiJSUzI1NiIsImtpZCI6Im1hc3FHSF9OWkxpR1JKdXZGOC1JWTFfX1BPZ3dCdGM5RkNyZFViclFWeFEifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJqZW5raW5zLXNhLXRva2VuLTlsNXh6Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImplbmtpbnMtc2EiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJkNGUxYTkwMC0xMjAwLTQxMTktYWIyMi1kZmNiNjJhMjM1Y2EiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06amVua2lucy1zYSJ9.pN1E5pjXc9RrwPOjW0csfYbgiC5B2UYRiyyYEl0KBlmaewqcUfe-5QM0ShflsFPW6j7tLhsf8QkzLuwrl20TL2Zj1uG95kpvABpYUhcXwySAaVBmu75VARpQz1k6sBjHUCAw3JZYpg941-dYAN_AfOgSQaaH-vlbWSknOtCWQdt_N1HN0VsiKjy2oi-WLz28ycwxXqnxeI7NzHMkIe7RphVNP3YfE_LhXqWbO1EJWbyDnGzdCzah7V-D2XwsWwW_lrpig5AWO7zQI929_Cft5iXX2PqCjAyzLeoBG9VOuY23WiEQfEkpT6VoqM01jAzT3Ie5oocmQCjRoKx8q4Pccw
+      env: null
+      interactiveMode: IfAvailable
+      provideClusterInfo: false
+- name: jenkins-sa
+  user:
+    token: eyJhbGciOiJSUzI1NiIsImtpZCI6Im1hc3FHSF9OWkxpR1JKdXZGOC1JWTFfX1BPZ3dCdGM5RkNyZFViclFWeFEifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJqZW5raW5zLXNhLXRva2VuLTlsNXh6Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImplbmtpbnMtc2EiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJkNGUxYTkwMC0xMjAwLTQxMTktYWIyMi1kZmNiNjJhMjM1Y2EiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06amVua2lucy1zYSJ9.pN1E5pjXc9RrwPOjW0csfYbgiC5B2UYRiyyYEl0KBlmaewqcUfe-5QM0ShflsFPW6j7tLhsf8QkzLuwrl20TL2Zj1uG95kpvABpYUhcXwySAaVBmu75VARpQz1k6sBjHUCAw3JZYpg941-dYAN_AfOgSQaaH-vlbWSknOtCWQdt_N1HN0VsiKjy2oi-WLz28ycwxXqnxeI7NzHMkIe7RphVNP3YfE_LhXqWbO1EJWbyDnGzdCzah7V-D2XwsWwW_lrpig5AWO7zQI929_Cft5iXX2PqCjAyzLeoBG9VOuY23WiEQfEkpT6VoqM01jAzT3Ie5oocmQCjRoKx8q4Pccw
